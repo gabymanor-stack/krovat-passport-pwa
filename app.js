@@ -1,10 +1,10 @@
 const PAGE_IMAGES = [
-  "pages/01_Cover.PNG","pages/02_Profile.PNG",
-  "pages/03_Madeira.PNG","pages/04_London.PNG","pages/05_Brussels.PNG","pages/06_Beirut.PNG","pages/07_Monaco.PNG","pages/08_Moscow.PNG",
-  "pages/09_Random.PNG","pages/10_Random.PNG","pages/11_Random.PNG","pages/12_Random.PNG","pages/13_Random.PNG",
-  "pages/14_Random.PNG","pages/15_Random.PNG","pages/16_Random.PNG","pages/17_Random.PNG","pages/18_Random.PNG","pages/19_Random.PNG","pages/20_Random.PNG",
-  "pages/21_Random.PNG","pages/22_Random.PNG","pages/23_Random.PNG","pages/24_Random.PNG","pages/25_Random.PNG","pages/26_Random.PNG","pages/27_Random.PNG",
-  "pages/28_Back.PNG"
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/01_Cover.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/01_Profile.PNG,
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/03_Madeira.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/04_London.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/05_Brussels.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/06_Beirut.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/07_Monaco.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/08_Moscow.PNG",
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/09_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/10_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/11_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/12_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/13_Random.PNG",
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/14_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/15_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/16_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/17_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/18_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/19_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/20_Random.PNG",
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/21_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/22_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/23_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/24_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/25_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/26_Random.PNG","https://gabymanor-stack.github.io/krovat-passport-pwa/pages/27_Random.PNG",
+  "https://gabymanor-stack.github.io/krovat-passport-pwa/pages/28_Back.PNG"
 ];
 const INK_COLORS = ["#243A56","#7B3A2B","#2F2F2F","#41543A","#594567"];
 const SHAPES = ["round","oval","rect","hex","tri"];
