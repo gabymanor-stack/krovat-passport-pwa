@@ -1,9 +1,9 @@
 const PAGE_IMAGES = [
   "pages/01_Cover.png","pages/02_Profile.png",
   "pages/03_Madeira.png","pages/04_London.png","pages/05_Brussels.png","pages/06_Beirut.png","pages/07_Monaco.png","pages/08_Moscow.png",
-  "pages/09_XX.png","pages/10_XX.png","pages/11_XX.png","pages/12_XX.png","pages/13_XX.png",
-  "pages/14_XX.png","pages/15_XX.png","pages/16_XX.png","pages/17_XX.png","pages/18_XX.png","pages/19_XX.png","pages/20_XX.png",
-  "pages/21_XX.png","pages/22_XX.png","pages/23_XX.png","pages/24_XX.png","pages/25_XX.png","pages/26_XX.png","pages/27_XX.png",
+  "pages/09_Random.png","pages/10_Random.png","pages/11_Random.png","pages/12_Random.png","pages/13_Random.png",
+  "pages/14_Random.png","pages/15_Random.png","pages/16_Random.png","pages/17_Random.png","pages/18_Random.png","pages/19_Random.png","pages/20_Random.png",
+  "pages/21_Random.png","pages/22_Random.png","pages/23_Random.png","pages/24_Random.png","pages/25_Random.png","pages/26_Random.png","pages/27_Random.png",
   "pages/28_Back.png"
 ];
 const INK_COLORS = ["#243A56","#7B3A2B","#2F2F2F","#41543A","#594567"];
