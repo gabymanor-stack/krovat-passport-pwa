@@ -30,10 +30,24 @@ function loadState(){
 function saveState(){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(pages)); }catch(e){} }
 
 function makePage(i){
-  const div=document.createElement('div');
-  div.className='page hidden';
-  div.style.backgroundImage=`url("${PAGE_IMAGES[i]}")`;
-  const canvas=document.createElement('canvas'); canvas.className='stamps'; div.appendChild(canvas);
+  const div = document.createElement('div');
+  div.className = 'page hidden';
+
+  // Use <img> for the page artwork instead of CSS background:
+  const bg = document.createElement('img');
+  bg.className = 'page-bg';
+  bg.alt = `page ${i+1}`;
+  bg.decoding = 'async';
+  bg.loading = 'lazy';
+  bg.crossOrigin = 'anonymous';
+  bg.src = PAGE_IMAGES[i];
+  div.appendChild(bg);
+
+  // Canvas for stamps on top
+  const canvas = document.createElement('canvas');
+  canvas.className = 'stamps';
+  div.appendChild(canvas);
+
   div.addEventListener('pointerdown', (e)=>onTapPage(e, div));
   return div;
 }
