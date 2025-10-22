@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Winston’s Teddy Passport (PWA)</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b1120">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Winston’s Teddy Passport</h1>
+    <nav class="controls">
+      <button id="prevBtn" title="Previous page">◀ Prev</button>
+      <button id="nextBtn" title="Next page">Next ▶</button>
+      <button id="exportPDF" title="Export stamped passport PDF">Export PDF</button>
+      <div class="menu">
+        <button id="moreBtn">⋯</button>
+        <div id="moreMenu" class="dropdown hidden">
+          <button id="exportJSON">Export Stamps JSON</button>
+          <label class="filelike">
+            Import Stamps JSON
+            <input id="importJSON" type="file" accept="application/json" hidden>
+          </label>
+          <button id="installBtn" class="install-only hidden">Install App</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="book" class="book"></div>
+    <p class="hint">Tap a page to add a random entry stamp (shape, color, icon). Allow Location for auto city/country.</p>
+  </main>
+
+  <footer>
+    <small>Use the ⋯ menu to export/import your stamps JSON so you can migrate to the native app later.</small>
+  </footer>
+</body>
+</html>
