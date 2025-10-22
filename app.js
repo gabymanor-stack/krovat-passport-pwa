@@ -1,10 +1,10 @@
 const PAGE_IMAGES = [
-  "pages/01_Cover.png","pages/02_Profile.png",
-  "pages/03_Madeira.png","pages/04_London.png","pages/05_Brussels.png","pages/06_Beirut.png","pages/07_Monaco.png","pages/08_Moscow.png",
-  "pages/09_Random.png","pages/10_Random.png","pages/11_Random.png","pages/12_Random.png","pages/13_Random.png",
-  "pages/14_Random.png","pages/15_Random.png","pages/16_Random.png","pages/17_Random.png","pages/18_Random.png","pages/19_Random.png","pages/20_Random.png",
-  "pages/21_Random.png","pages/22_Random.png","pages/23_Random.png","pages/24_Random.png","pages/25_Random.png","pages/26_Random.png","pages/27_Random.png",
-  "pages/28_Back.png"
+  "pages/01_Cover.PNG","pages/02_Profile.PNG",
+  "pages/03_Madeira.PNG","pages/04_London.PNG","pages/05_Brussels.PNG","pages/06_Beirut.PNG","pages/07_Monaco.PNG","pages/08_Moscow.PNG",
+  "pages/09_Random.PNG","pages/10_Random.PNG","pages/11_Random.PNG","pages/12_Random.PNG","pages/13_Random.PNG",
+  "pages/14_Random.PNG","pages/15_Random.PNG","pages/16_Random.PNG","pages/17_Random.PNG","pages/18_Random.PNG","pages/19_Random.PNG","pages/20_Random.PNG",
+  "pages/21_Random.PNG","pages/22_Random.PNG","pages/23_Random.PNG","pages/24_Random.PNG","pages/25_Random.PNG","pages/26_Random.PNG","pages/27_Random.PNG",
+  "pages/28_Back.PNG"
 ];
 const INK_COLORS = ["#243A56","#7B3A2B","#2F2F2F","#41543A","#594567"];
 const SHAPES = ["round","oval","rect","hex","tri"];
