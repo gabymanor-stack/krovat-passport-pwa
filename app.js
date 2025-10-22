@@ -37,11 +37,42 @@ function makePage(i){
   div.addEventListener('pointerdown', (e)=>onTapPage(e, div));
   return div;
 }
-function layoutPages(){
-  book.innerHTML='';
-  for(let i=0;i<PAGE_IMAGES.length;i++){ book.appendChild(makePage(i)); }
+function preload(src){
+  return new Promise(res=>{
+    const i = new Image();
+    i.onload = ()=>res({src, ok:true});
+    i.onerror = ()=>res({src, ok:false});
+    i.src = src;
+  });
+}
+async function showDiagnostics(results){
+  const d=document.createElement('div');
+  d.style.cssText='position:fixed;inset:10px;background:#0b1120;color:#e2e8f0;z-index:9999;padding:10px;border:1px solid #334155;border-radius:8px;font:12px system-ui;overflow:auto';
+  d.innerHTML='<b>Image diagnostics</b><br><small>Green=loaded, Red=missing</small><hr>';
+  for(const r of results){
+    d.innerHTML += `<div style="color:${r.ok?'#10b981':'#ef4444'}">${r.ok?'✅':'❌'} ${r.src}</div>`;
+  }
+  const b=document.createElement('button');
+  b.textContent='Close';
+  b.style.cssText='margin-top:8px;padding:6px 10px;background:#1f2937;color:#fff;border:0;border-radius:6px';
+  b.onclick=()=>d.remove();
+  d.appendChild(b);
+  document.body.appendChild(d);
+}
+
+async function layoutPages(){
+  const results = await Promise.all(PAGE_IMAGES.map(preload));
+  if (results.some(r=>!r.ok)) showDiagnostics(results);
+
+  book.innerHTML = '';
+  for (let i=0;i<PAGE_IMAGES.length;i++){
+    const p = makePage(i);
+    book.appendChild(p);
+  }
   updatePageClasses();
   resizeCanvases();
+}
+
 }
 function updatePageClasses(){
   const els=[...book.children];
