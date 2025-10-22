@@ -16,6 +16,12 @@ let current = 0;
 let pages = loadState();
 
 const book = document.getElementById('book');
+// Preload all passport pages for smoother flipping
+PAGE_IMAGES.forEach(src => { 
+  const i = new Image(); 
+  i.crossOrigin = "anonymous"; 
+  i.src = src; 
+});
 
 function defaultState(){ return PAGE_IMAGES.map(()=>({stamps:[]})); }
 function loadState(){
