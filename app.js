@@ -1,7 +1,7 @@
 const PAGE_IMAGES = [
   "pages/01_Cover.png","pages/02_Profile.png",
   "pages/03_Madeira.png","pages/04_London.png","pages/05_Brussels.png","pages/06_Beirut.png","pages/07_Monaco.png","pages/08_Moscow.png",
-  "pages/09_Toronto.png","pages/10_Singapore.png","pages/11_TajMahal.png","pages/12_Sydney.png","pages/13_Petra.png",
+  "pages/09_XX.png","pages/10_XX.png","pages/11_XX.png","pages/12_XX.png","pages/13_XX.png",
   "pages/14_XX.png","pages/15_XX.png","pages/16_XX.png","pages/17_XX.png","pages/18_XX.png","pages/19_XX.png","pages/20_XX.png",
   "pages/21_XX.png","pages/22_XX.png","pages/23_XX.png","pages/24_XX.png","pages/25_XX.png","pages/26_XX.png","pages/27_XX.png",
   "pages/28_Back.png"
